@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "machine-learning-design-pattern"
+version = "0.0.1"
+description = ""
+authors = ["minsoo9506"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
