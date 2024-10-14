@@ -1,3 +1,21 @@
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+pretty = true
+warn_unused_ignores = true
+show_error_context = true
+warn_incomplete_stub = true
+ignore_missing_imports = true
+check_untyped_defs = true
+cache_dir = "/dev/null"
+warn_redundant_casts = true
+warn_unused_configs = true
+strict_optional = true
+
 [tool.poetry]
 name = "machine-learning-design-pattern"
 version = "0.0.1"
@@ -6,8 +24,14 @@ authors = ["minsoo9506"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11,<3.13"
+python = "^3.12,<3.13"
 
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.12.0"
+flake8 = "^7.1.1"
 
 [build-system]
 requires = ["poetry-core"]
